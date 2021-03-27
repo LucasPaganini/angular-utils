@@ -6,8 +6,10 @@
  * MIT license. See the LICENSE file for details.
  **************************************************************************/
 
-import { Injectable, OnDestroy } from '@angular/core'
-import { Observable, Subject } from 'rxjs'
+import type { OnDestroy } from '@angular/core'
+import { Injectable } from '@angular/core'
+import type { Observable } from 'rxjs'
+import { Subject } from 'rxjs'
 import { takeUntil } from 'rxjs/operators'
 
 @Injectable()
