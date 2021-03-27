@@ -118,4 +118,8 @@ describe('UnsubscriberService', () => {
       'directive ngOnDestroy',
     ]);
   });
+
+  it('should complete the obvervable when its provider component is destroyed');
+
+  it('should complete the obvervable when its provider directive is destroyed');
 });
