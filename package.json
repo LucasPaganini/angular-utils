@@ -1,0 +1,27 @@
+{
+  "name": "@lucaspaganini/angular-utils",
+  "version": "0.0.0",
+  "description": "Utilities for Angular projects",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "exit 1",
+    "build": "exit 1",
+    "lint": "exit 1",
+    "format": "exit 1",
+    "prepublishOnly": "npm run format && npm run lint && npm test && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LucasPaganini/angular-utils.git"
+  },
+  "author": "Lucas Paganini <me@lucaspaganini.com> (https://lucaspaganini.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LucasPaganini/angular-utils/issues"
+  },
+  "homepage": "https://github.com/LucasPaganini/angular-utils#readme"
+}
