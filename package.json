@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/LucasPaganini/angular-utils/issues"
   },
-  "homepage": "https://github.com/LucasPaganini/angular-utils#readme"
+  "homepage": "https://github.com/LucasPaganini/angular-utils#readme",
+  "devDependencies": {
+    "@angular/cli": "^11.2.6"
+  }
 }
