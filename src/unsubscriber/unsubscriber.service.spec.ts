@@ -20,7 +20,7 @@ describe('UnsubscriberService', () => {
     type TestLog = 'component ngOnInit' | 'component ngOnDestroy' | 'service ngOnDestroy'
 
     @Component({
-      selector: 'app-test',
+      selector: 'lp-test',
       providers: [UnsubscriberService],
     })
     class TestComponent implements OnInit, OnDestroy {
@@ -62,7 +62,7 @@ describe('UnsubscriberService', () => {
     type TestLog = 'directive ngOnInit' | 'directive ngOnDestroy' | 'service ngOnDestroy'
 
     @Directive({
-      selector: '[appTest]',
+      selector: '[lpTest]',
       providers: [UnsubscriberService],
     })
     class TestDirective implements OnInit, OnDestroy {
@@ -85,8 +85,8 @@ describe('UnsubscriberService', () => {
     }
 
     @Component({
-      selector: 'app-test',
-      template: '<p [appTest]>test</p>',
+      selector: 'lp-test',
+      template: '<p [lpTest]>test</p>',
     })
     class TestComponent {}
 
