@@ -4,14 +4,14 @@ import { takeUntil } from 'rxjs/operators';
 
 @Injectable()
 export class UnsubscriberService implements OnDestroy {
-  private readonly _destroy$ = new Subject<void>();
+  public readonly destroy$ = new Subject<void>();
 
   public readonly takeUntilDestroy = <T>(
     origin: Observable<T>
-  ): Observable<T> => origin.pipe(takeUntil(this._destroy$));
+  ): Observable<T> => origin.pipe(takeUntil(this.destroy$));
 
   public ngOnDestroy(): void {
-    this._destroy$.next();
-    this._destroy$.complete();
+    this.destroy$.next();
+    this.destroy$.complete();
   }
 }
