@@ -6,4 +6,4 @@
  * MIT license. See the LICENSE file for details.
  **************************************************************************/
 
-export * from './unsubscriber.service';
+export * from './unsubscriber.service'

@@ -1,13 +1,5 @@
 {
-  "ignore": [
-    ".config",
-    "scripts",
-    "**/*/assets",
-    ".devcontainer",
-    ".git",
-    ".github",
-    "*"
-  ],
+  "ignore": [".config", "scripts", "**/*/assets", ".devcontainer", ".git", ".github", "*"],
   "license": ".config/license-header.txt",
   "licenseFormats": {
     "ts|js": {

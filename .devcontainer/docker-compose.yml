@@ -1,6 +1,6 @@
 # Docker compose for development
 
-version: "3.8"
+version: '3.8'
 
 services:
   main:
@@ -10,13 +10,13 @@ services:
     deploy:
       resources:
         limits:
-          cpus: "8"
+          cpus: '8'
           memory: 16g
         reservations:
-          cpus: "0.25"
+          cpus: '0.25'
           memory: 1g
     ports:
-      - "4200:4200"
+      - '4200:4200'
     networks:
       - main-net-dev
     tty: true
