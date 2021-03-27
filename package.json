@@ -5,8 +5,8 @@
   "scripts": {
     "test": "ng test",
     "build": "ng build --prod",
-    "lint": "license-check-and-add check -f ./.config/license-header.json && ng lint && prettier --check .",
-    "format": "license-check-and-add add -f ./.config/license-header.json && prettier --write .",
+    "lint": "license-check-and-add check -f ./.config/license-header.json && prettier --check . && eslint \"src/**/*.ts\" && ng lint",
+    "format": "license-check-and-add add -f ./.config/license-header.json && eslint --fix \"src/**/*.ts\" && prettier --write .",
     "prepublishOnly": "npm run format && npm run lint && npm test && npm run build"
   },
   "repository": {
@@ -40,7 +40,13 @@
     "@angular/router": "~11.2.7",
     "@types/jasmine": "~3.6.0",
     "@types/node": "^12.11.1",
+    "@typescript-eslint/eslint-plugin": "^4.19.0",
+    "@typescript-eslint/parser": "^4.19.0",
     "codelyzer": "^6.0.0",
+    "eslint": "^7.23.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
     "jasmine-core": "~3.6.0",
     "jasmine-spec-reporter": "~5.0.0",
     "karma": "~6.1.0",
