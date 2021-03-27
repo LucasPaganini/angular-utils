@@ -1,0 +1,25 @@
+// For format details, see https://aka.ms/vscode-remote/devcontainer.json or this file's README at:
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.134.0/containers/javascript-node
+{
+  "name": "ewoc-frontend",
+
+  "dockerComposeFile": "./docker-compose.yml",
+  "forwardPorts": [4200],
+  "service": "main",
+
+  "workspaceFolder": "/workspace",
+  "shutdownAction": "stopCompose",
+
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+
+  // Add the IDs of extensions you want installed when the container is created.
+  "extensions": [
+    "angular.ng-template",
+    "dbaeumer.vscode-eslint",
+    "ms-vscode.vscode-typescript-tslint-plugin",
+    "esbenp.prettier-vscode",
+    "eamodio.gitlens"
+  ]
+}
