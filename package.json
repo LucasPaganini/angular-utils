@@ -6,7 +6,7 @@
     "test": "ng test",
     "build": "ng build --prod",
     "lint": "ng lint",
-    "format": "exit 1",
+    "format": "license-check-and-add add -f ./.config/license-header.json",
     "prepublishOnly": "npm run format && npm run lint && npm test && npm run build"
   },
   "repository": {
@@ -48,6 +48,7 @@
     "karma-coverage": "~2.0.3",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "^1.5.0",
+    "license-check-and-add": "^4.0.2",
     "ng-packagr": "^11.0.0",
     "protractor": "~7.0.0",
     "rxjs": "~6.6.0",
