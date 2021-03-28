@@ -3,7 +3,7 @@
   "compileOnSave": false,
   "compilerOptions": {
     "paths": {
-      "angular-utils": ["dist/angular-utils/angular-utils", "dist/angular-utils"]
+      "angular-utils": ["dist"]
     },
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
@@ -18,7 +18,7 @@
     "moduleResolution": "node",
     "importHelpers": true,
     "target": "es2015",
-    "module": "esnext",
+    "module": "es2020",
     "lib": ["es2018", "dom"]
   },
   "angularCompilerOptions": {
