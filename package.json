@@ -1,6 +1,6 @@
 {
   "name": "@lucaspaganini/angular-utils",
-  "version": "0.0.0",
+  "version": "0.0.0-PLACEHOLDER",
   "description": "Utilities for Angular projects",
   "scripts": {
     "test": "ng test --no-watch",
@@ -8,7 +8,7 @@
     "build": "ng build --prod",
     "lint": "license-check-and-add check -f ./.config/license-header.json && prettier --check . && eslint \"src/**/*.ts\" && ng lint",
     "format": "license-check-and-add add -f ./.config/license-header.json && eslint --fix \"src/**/*.ts\" && prettier --write .",
-    "prepublishOnly": "npm run format && npm run lint && npm test && npm run build"
+    "prepublishOnly": "npm clean-install && npm run format && npm run lint && npm test && npm run build"
   },
   "repository": {
     "type": "git",

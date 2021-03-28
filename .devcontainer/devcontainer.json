@@ -4,7 +4,6 @@
   "name": "@lucaspaganini__angular-utils",
 
   "dockerComposeFile": "./docker-compose.yml",
-  "forwardPorts": [4200],
   "service": "main",
 
   "workspaceFolder": "/workspace",
