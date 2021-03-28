@@ -35,15 +35,15 @@ module.exports = function (config) {
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
-    browsers: ['Chrome'],
+    browsers: ['ChromeHeadlessCI', 'FirefoxHeadlessCI'],
     customLaunchers: {
-      FirefoxHeadlessCI: {
-        base: 'Firefox',
-        flags: ['-headless'],
-      },
       ChromeHeadlessCI: {
         base: 'ChromeHeadless',
         flags: ['--no-sandbox'],
+      },
+      FirefoxHeadlessCI: {
+        base: 'Firefox',
+        flags: ['-headless'],
       },
     },
     singleRun: false,
