@@ -1,0 +1,26 @@
+name: Validate Pull Request
+
+on:
+  pull_request:
+    branches: [master]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js 14.16.0
+        uses: actions/setup-node@v1
+        with:
+          node-version: '14.16.0'
+      - name: Use NPM 7.7.5
+        run: npm i -g npm@7.7.5
+      - name: Install dependencies
+        run: npm clean-install
+      - name: Lint
+        run: npm run lint
+      - name: Build
+        run: npm run build
+      - name: Test
+        run: npm test -- --no-progress
