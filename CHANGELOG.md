@@ -9,6 +9,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [9.0.0] - 2021-03-28
 
+- #15 -- Support angular 9
+
 ## [0.0.0] - 2021-03-28
 
 - First release
