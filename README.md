@@ -1,25 +1,13 @@
-# AngularUtils
+# Angular Utilities
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.7.
+Angular utilities presented in Lucas Paganini's [videos](https://www.youtube.com/channel/UCb2qfrlxS0kK9vca_fpjdNQ) and [articles](https://www.lucaspaganini.com/).
 
-## Code scaffolding
+## Angular Compatibility
 
-Run `ng generate component component-name --project angular-utils` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project angular-utils`.
+We support all [Angular active & LTS versions](https://angular.io/guide/releases#support-policy-and-schedule).
 
-> Note: Don't forget to add `--project angular-utils` or else it will be added to the default project in your `angular.json` file.
-
-## Build
-
-Run `ng build angular-utils` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Publishing
-
-After building your library with `ng build angular-utils`, go to the dist folder `cd dist/angular-utils` and run `npm publish`.
-
-## Running unit tests
-
-Run `ng test angular-utils` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+| Package version | Angular version |
+| --------------: | --------------: |
+|          11.x.x |       >= 11.0.0 |
+|          10.x.x |       >= 10.0.0 |
+|           9.x.x |        >= 9.0.0 |
