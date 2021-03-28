@@ -1,4 +1,4 @@
-FROM node:14.16.0
+FROM node:12.21.0
 RUN npm install -g npm@7.7.5
 
 RUN apt-get update \

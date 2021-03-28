@@ -40,7 +40,7 @@ module.exports = {
     '@typescript-eslint/no-dynamic-delete': 'error',
     '@typescript-eslint/no-for-in-array': 'error',
     '@typescript-eslint/no-require-imports': 'error',
-    '@typescript-eslint/consistent-type-imports': 'error',
+    '@typescript-eslint/consistent-type-imports': ['error', { prefer: 'no-type-imports' }], // TODO(ts3.8): "import type" Not supported yet
     '@typescript-eslint/prefer-as-const': 'error',
     '@typescript-eslint/prefer-for-of': 'error',
     '@typescript-eslint/prefer-readonly': 'error',
