@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "description": "Utilities for Angular projects",
   "scripts": {
-    "test": "ng test",
+    "test": "ng test --no-watch",
+    "test:watch": "ng test",
     "build": "ng build --prod",
     "lint": "license-check-and-add check -f ./.config/license-header.json && prettier --check . && eslint \"src/**/*.ts\" && ng lint",
     "format": "license-check-and-add add -f ./.config/license-header.json && eslint --fix \"src/**/*.ts\" && prettier --write .",
@@ -52,6 +53,7 @@
     "karma": "~6.1.0",
     "karma-chrome-launcher": "~3.1.0",
     "karma-coverage": "~2.0.3",
+    "karma-firefox-launcher": "^2.1.0",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "^1.5.0",
     "license-check-and-add": "^4.0.2",
