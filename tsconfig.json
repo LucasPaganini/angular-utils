@@ -34,8 +34,8 @@
     "declaration": false,
 
     "baseUrl": "./",
-    "paths": {"angular-utils": ["dist"]},
-    "outDir": "./dist/out-tsc",
+    "paths": { "angular-utils": ["dist"] },
+    "outDir": "./dist/out-tsc"
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
