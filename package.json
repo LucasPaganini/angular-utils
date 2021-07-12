@@ -5,7 +5,7 @@
   "scripts": {
     "test": "ng test --no-watch",
     "test:watch": "ng test",
-    "build": "ng build --prod",
+    "build": "ng build",
     "lint": "license-check-and-add check -f ./.config/license-header.json && prettier --check . && eslint \"src/**/*.ts\" && ng lint",
     "format": "license-check-and-add add -f ./.config/license-header.json && eslint --fix \"src/**/*.ts\" && prettier --write .",
     "prepublishOnly": "npm clean-install && npm run format && npm run lint && npm test && npm run build"
@@ -21,25 +21,25 @@
   },
   "homepage": "https://github.com/LucasPaganini/angular-utils#readme",
   "peerDependencies": {
-    "@angular/common": "11.x.x",
-    "@angular/core": "11.x.x"
+    "@angular/common": "12.x.x",
+    "@angular/core": "12.x.x"
   },
   "dependencies": {
-    "tslib": "^2.0.0"
+    "tslib": "^2.3.0"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "~0.1100.7",
-    "@angular/animations": "~11.0.9",
-    "@angular/cli": "~11.0.7",
-    "@angular/common": "~11.0.9",
-    "@angular/compiler": "~11.0.9",
-    "@angular/compiler-cli": "~11.0.9",
-    "@angular/core": "~11.0.9",
-    "@angular/forms": "~11.0.9",
-    "@angular/language-service": "~11.0.0",
-    "@angular/platform-browser": "~11.0.9",
-    "@angular/platform-browser-dynamic": "~11.0.9",
-    "@angular/router": "~11.0.9",
+    "@angular-devkit/build-angular": "~12.1.1",
+    "@angular/animations": "~12.1.1",
+    "@angular/cli": "~12.1.1",
+    "@angular/common": "~12.1.1",
+    "@angular/compiler": "~12.1.1",
+    "@angular/compiler-cli": "~12.1.1",
+    "@angular/core": "~12.1.1",
+    "@angular/forms": "~12.1.1",
+    "@angular/language-service": "~12.1.1",
+    "@angular/platform-browser": "~12.1.1",
+    "@angular/platform-browser-dynamic": "~12.1.1",
+    "@angular/router": "~12.1.1",
     "@types/jasmine": "~3.6.0",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "^12.11.1",
@@ -54,7 +54,7 @@
     "eslint-plugin-simple-import-sort": "^7.0.0",
     "jasmine-core": "~3.6.0",
     "jasmine-spec-reporter": "~5.0.0",
-    "karma": "~5.1.0",
+    "karma": "~6.3.4",
     "karma-chrome-launcher": "~3.1.0",
     "karma-coverage": "~2.0.3",
     "karma-coverage-istanbul-reporter": "~3.0.2",
@@ -62,13 +62,12 @@
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "^1.5.0",
     "license-check-and-add": "^4.0.2",
-    "ng-packagr": "^11.0.0",
+    "ng-packagr": "^12.1.1",
     "prettier": "^2.3.2",
     "protractor": "~7.0.0",
     "rxjs": "~6.6.0",
-    "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
-    "typescript": "~4.0.2",
-    "zone.js": "~0.10.2"
+    "typescript": "~4.3.5",
+    "zone.js": "~0.11.4"
   }
 }
