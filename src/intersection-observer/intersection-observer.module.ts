@@ -6,9 +6,13 @@
  * MIT license. See the LICENSE file for details.
  **************************************************************************/
 
-/*
- * Public API Surface of angular-utils
- */
+import { CommonModule } from '@angular/common'
+import { NgModule } from '@angular/core'
+import { IntersectionObserverDirective } from './intersection-observer.directive'
 
-export * from './unsubscriber'
-export * from './intersection-observer'
+@NgModule({
+  declarations: [IntersectionObserverDirective],
+  imports: [CommonModule],
+  exports: [IntersectionObserverDirective],
+})
+export class IntersectionObserverModule {}
