@@ -2,24 +2,40 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "paths": {
-      "angular-utils": ["dist/angular-utils/angular-utils", "dist/angular-utils"]
-    },
-    "baseUrl": "./",
-    "outDir": "./dist/out-tsc",
-    "forceConsistentCasingInFileNames": true,
+    "alwaysStrict": true,
     "strict": true,
+    "strictNullChecks": true,
+    "strictBindCallApply": true,
+    "strictFunctionTypes": true,
+    "strictPropertyInitialization": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowJs": false,
+
+    "noEmitOnError": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
-    "sourceMap": true,
-    "declaration": false,
+
+    "types": [],
+    "lib": ["ES2020", "DOM"],
+    "importHelpers": true,
     "downlevelIteration": true,
     "experimentalDecorators": true,
-    "moduleResolution": "node",
-    "importHelpers": true,
-    "target": "es2015",
-    "module": "esnext",
-    "lib": ["es2018", "dom"]
+    "emitDecoratorMetadata": true,
+
+    "module": "ESNEXT",
+    "moduleResolution": "Node",
+    "target": "ES2015",
+
+    "sourceMap": true,
+    "declaration": false,
+
+    "baseUrl": "./",
+    "paths": { "angular-utils": ["dist"] },
+    "outDir": "./dist/out-tsc"
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
