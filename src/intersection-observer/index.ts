@@ -6,9 +6,5 @@
  * MIT license. See the LICENSE file for details.
  **************************************************************************/
 
-/*
- * Public API Surface of angular-utils
- */
-
-export * from './unsubscriber'
-export * from './intersection-observer'
+export * from './intersection-observer.directive'
+export * from './intersection-observer.module'
