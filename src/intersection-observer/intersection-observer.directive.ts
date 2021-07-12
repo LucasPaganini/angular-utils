@@ -6,8 +6,7 @@
  * MIT license. See the LICENSE file for details.
  **************************************************************************/
 
-import type { OnDestroy, OnInit } from '@angular/core'
-import { Directive, ElementRef, EventEmitter, Input, Output } from '@angular/core'
+import { Directive, ElementRef, EventEmitter, Input, OnDestroy, OnInit, Output } from '@angular/core'
 import { Observable } from 'rxjs'
 import { UnsubscriberService } from '../unsubscriber'
 
